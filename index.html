@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type = "image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0792bebc66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "images/logo.png" class = "logo">
+                <ul id="sidemenu">
+                    <li><a href = "#header">Home</a></li>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#services">Services</a></li>
+                    <li><a href = "#portfolio">Portfolio</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Game Developer</p>
+                <h1> Hi, I am <span>Marvin!</span></h1>
+            </div>
+        </div>
+    </div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a skilled and adaptable programmer with expertise in C#, C++, and Java. With a background in quality 
+                    assurance and game development from my internship experience, I bring a unique perspective to my work. 
+                    Beyond my technical proficiency, I possess strong leadership qualities, thrive under pressure, and readily 
+                    adapt to changing environments. As a dedicated worker, I am recognized for my relentless work ethic, continuous 
+                    learning mindset, and my unwavering commitment to overcoming challenges. I aspire to be known as a dynamic 
+                    professional who not only excels in programming but also contributes positively to team dynamics and 
+                    organizational success.</p>
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                    <p class = "tab-links" onclick = "opentab('certifications')">Certifcations</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span> Unity Technologies</span><br> Game Development</li>
+                        <li> <span> Web Development</span><br> Design Web/App Interfaces</li>
+                        <li> <span> Coding Languages</span><br> C#, HTML, CSS, Java, Python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li> <span> NTEKSYSTEMS: Internship</span><br>Quality Assurance</li>
+                        <li> <span> NTEKSYSTEMS: Internship</span><br>Lead Developer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <span> BS Information Technology with
+                            Specialization in Animation and
+                            Game Development
+                             </span><br> FEU Institute of Technology</li>
+                        <li> <span> STEM - Engineering </span><br> Adamson University</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li> <span> 2021</span><br>Information Technology Specialists – Databases</li>
+                        <li> <span> 2021 </span><br>Cisco CCNAv7– Introduction to Networks </li>
+                        <li> <span> 2023 </span><br>Information Technology Specialists – HTML and CSS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------Services------------------>
+<div id="services">
+    <div class = "container">
+        <h1 class="sub-title">Services</h1>
+        <div class = "services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Coding </h2>
+                <p> A passionate coder on a journey of turning ideas into reality through 
+                    lines of code. Specialized in Animation and Game Development, I thrive on challenges 
+                    and love building innovative solutions. </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2> Game Development </h2>
+                <p>  A dedicated game developer with a passion for creating captivating experiences. 
+                    From coding to design, I bring ideas to life. </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wrench"></i>
+                <h2> Software Support </h2>
+                <p> Your seamless software experience matters to me. From troubleshooting issues to 
+                    guiding you through features, I'm here for personalized support. Let's make your 
+                    digital journey smooth and enjoyable!</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------Portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Creepiyu.png">
+                <div class="layer">
+                    <h3> Creepiyu </h3>
+                    <p>A First-Person Horror Game Providing a Connection to the Critical Aspect of One’s
+                        Mental Health</p>
+                        <a href="creepiyu.html" onclick="redirectToPage('creepiyu.html')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/Carniverse.png">
+                <div class="layer">
+                    <h3> Carniverse </h3>
+                    <p>A Single-Player Arcade Game That Involves Multiple Carnival Games and
+                        Interactable Rides </p>
+                        <a href="carniverse.html" onclick="redirectToPage('carniverse.html')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Marble.png">
+                <div class="layer">
+                    <h3> Marble </h3>
+                    <p>A single-player billiard-like, puzzle game where the player’s main goal is to match
+                        a ball with the same color to destroy when hit.</p>
+                        <a href="marble.html" onclick="redirectToPage('marble.html')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class = "btn"> See More</a>
+    </div>
+</div>
+<!-- ------------------------------ Contact ----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p> <i class="fa-regular fa-paper-plane"></i> panaliganmarvin@gmail.com </p>
+                <p> <i class="fa-solid fa-phone"></i> 0969 477 8602 </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/maaaaaaarvs/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/marvin-panaligan-95a6a415a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Marvin Fernandez Panaligan - CV.pdf" download class ="btn btn 2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = "Name" placeholder=" Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type = "submit" class="btn btn2">Submit </button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p> Copyright © Marvin Fernandez Panaligan </p>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzXUXNEPDm7PdJetG3PdVSp4eFVmM5a9-dNIX3aoK3WGlMQ1wkBXONUoIgIYHGiysw3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
